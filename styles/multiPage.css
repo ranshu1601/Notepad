@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.multipage-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 20vw;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s ease;
+    border-radius: 15px;
+}
+
+.close-multipage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    position: absolute;
+    right: -5vh;
+    height: 10vh;
+    width: 10vh;
+    background-color: #ffffff;
+    border-radius: 100%;
+    top: 40vh;
+    font-size: 5vh;
+    transition: .5s ease;
+    box-shadow: 0 0 10px #000;
+    transform: rotate(180deg);
+}
+
+.close-multipage i {
+    transform: rotate(180deg);
+}
+
+#prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #27c782;
+    position: absolute;
+    right: -3.5vh;
+    height: 7vh;
+    width: 7vh;
+    background-color: #ffffff;
+    border-radius: 100%;
+    top: 20vh;
+    font-size: 3vh;
+    transition: .5s ease;
+    box-shadow: 0 0 10px rgb(189, 44, 44);
+}
+
+#next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    position: absolute;
+    right: -3.5vh;
+    height: 7vh;
+    width: 7vh;
+    background-color: #ffffff;
+    border-radius: 100%;
+    top: 80vh;
+    font-size: 3vh;
+    transition: .5s ease;
+    box-shadow: 0 0 10px #000;
+}
+
+#add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    position: absolute;
+    right: -3.5vh;
+    height: 7vh;
+    width: 7vh;
+    background-color: #ffffff;
+    border-radius: 100%;
+    top: 60vh;
+    font-size: 3vh;
+    transition: .5s ease;
+    box-shadow: 0 0 10px #000;
+}
+
+.close-multipage i {
+    transition: .5s ease;
+}
+
+.thumbnail-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15vw;
+    color: #333333;
+}
+
+.thumbnail {
+    width: 13vw;
+    height: 15vh;
+    /*background-color: #fff200;*/
+    overflow: hidden;
+    margin: 2vh 0;
+    border-radius: 10px;
+    border: 1px solid rgba(125, 125, 125, 0.68);
+    transition: .5s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.selected {
+    box-shadow: 0 0 10px #000;
+}
+
+.multipage-titlebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    /*margin-top: -1vh;*/
+    background: rgb(163, 184, 26);
+    background: linear-gradient(196deg, rgb(20, 55, 116) 0%, rgba(120, 0, 255, 1) 100%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+}
+
+.multipage-thumbnails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.closed {
+    transform: translate(-19vw, 0);
+}
+
+.closed i {
+    transform: rotate(0deg);
+}
+
+.closed .showonexpand i {
+    transform: rotate(0deg);
+}
+
+.closed .showonexpand {
+    display: none !important;
+}
+
+.add-page {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    height: 7vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    transition: .5s ease;
+    border-bottom-right-radius: 15px;
+}
+
+.thumb-img {
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.number {
+    font-size: 3vh;
+    font-family: Ubuntu, sans-serif;
+}
